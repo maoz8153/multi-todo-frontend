@@ -1,0 +1,19 @@
+      <div class="container task-list-container">
+        <div class="task-header">
+          <div class="action-add" (click)="addNewTask()">add task</div>
+          <div class="action-remove" (click)="removedSelectedTasks()">remove completely</div>
+        </div>
+      </div>
+
+      <mat-selection-list (selectionChange)="onSelection($event, tasks.selectedOptions)" #tasks>
+        <div *ngFor="let task of taskList$ | async" class="task-selection">
+
+          <mat-list-option [checkboxPosition]='before' [value]="task" [selected]="task.complited">
+            <h3 matLine class="task-title"> {{task.title}}</h3>
+          </mat-list-option>
+          <button class="button-delete-task" mat-icon-button (click)="deleteTask(task)">
+            <i class="material-icons button-delete-task">delete</i>
+          </button>
+        </div>
+
+      </mat-selection-list>

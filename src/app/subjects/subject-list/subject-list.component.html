@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 sidebar-subjects">
+      <div class="sidebar-image">
+        <h6>{{user.firstName | capitalize }} {{user.lastName | capitalize}}</h6>
+        <img src="assets/images/{{user.gender | lowercase}}.png">
+      </div>
+      <mat-list role="list" class="subject-list">
+        <mat-list-item class="subject-item" role="listitem" *ngFor="let subject of subjectsAndCounters$ | async">
+          <span (click)="getSubjectsTasks(subject._id)">{{subject.title}}</span>
+          <span [matBadge]="subject.taskCounter" matBadgeOverlap="false"></span>
+        </mat-list-item>
+      </mat-list>
+      <footer>
+        <span class="sidebar-add-subject" (click)="addNewSubject()">
+          + Add list
+        </span>
+      </footer>
+    </div>
+    <div class="col-md-8 rigth-side-pannel">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>

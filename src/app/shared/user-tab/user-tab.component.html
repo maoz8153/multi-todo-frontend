@@ -1,0 +1,11 @@
+<!-- <div class="container">
+  <span>{{user.firstName | capitalize }} {{user.lastName | capitalize}}</span>
+  <img src="assets/images/{{user.gender | lowercase}}.png">
+</div> -->
+
+<mat-card class="user-card">
+  <img mat-card-image src="assets/images/{{user.gender | lowercase}}.png" alt="User photo">
+  <mat-card-content>
+    <h3>{{user.firstName | capitalize }} {{user.lastName | capitalize}}</h3>
+  </mat-card-content>
+</mat-card>

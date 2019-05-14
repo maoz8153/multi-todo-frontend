@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 user-collumn" *ngFor="let user of usersList$ | async">
+      <app-user-tab [user]="user" (click)="navigateToSubjects(user)"></app-user-tab>
+    </div>
+  </div>
+</div>

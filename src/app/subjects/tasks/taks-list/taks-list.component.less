@@ -1,0 +1,45 @@
+.task-list-container {
+  margin-top: 20px;
+}
+
+.task-header {
+  display: flex;
+}
+
+.action-add {
+  cursor: pointer;
+  font-style: oblique;
+  color: #0f75cb;
+  display: flex;
+  min-width: 59px;
+}
+
+.action-remove {
+  cursor: pointer;
+  font-style: oblique;
+  color: #0f75cb;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.task-selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+mat-list-option[aria-selected="true"] {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.button-delete-task {
+  color: rgb(151, 151, 151);
+}
+
+::ng-deep.mat-pseudo-checkbox {
+  border-color: #0f75cb !important;
+}
