@@ -2,23 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserTabComponent } from './user-tab/user-tab.component';
 import { CapitalizePipe } from './capitalize.pipe';
-import { A11yModule } from '@angular/cdk/a11y';
-import { DragDropModule } from '@angular/cdk/drag-drop';
-import { PortalModule } from '@angular/cdk/portal';
-import { ScrollingModule } from '@angular/cdk/scrolling';
-import { CdkStepperModule } from '@angular/cdk/stepper';
-import { CdkTableModule } from '@angular/cdk/table';
-import { CdkTreeModule } from '@angular/cdk/tree';
 import {
-  MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule,
+  MatBadgeModule,
   MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule,
-  MatChipsModule, MatDatepickerModule, MatDialogModule, MatDividerModule,
-  MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule,
-  MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule,
-  MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule,
-  MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule,
-  MatSortModule, MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule,
-  MatTreeModule
+  MatGridListModule, MatIconModule,
+  MatListModule,
+  MatSelectModule,
+  MatTableModule
 } from '@angular/material';
 
 
@@ -26,86 +16,27 @@ import {
   declarations: [UserTabComponent, CapitalizePipe],
   imports: [
     CommonModule,
-    MatSidenavModule,
-    MatNativeDateModule,
-    MatAutocompleteModule,
-    MatBadgeModule,
-    MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
+    MatBadgeModule,
     MatCardModule,
     MatCheckboxModule,
-    MatChipsModule,
-    MatDatepickerModule,
-    MatDialogModule,
-    MatDividerModule,
-    MatExpansionModule,
     MatGridListModule,
     MatIconModule,
-    MatInputModule,
     MatListModule,
-    MatMenuModule,
-    MatNativeDateModule,
-    MatPaginatorModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatRadioModule,
-    MatRippleModule,
     MatSelectModule,
-    MatSidenavModule,
-    MatSliderModule,
-    MatSlideToggleModule,
-    MatSnackBarModule,
-    MatSortModule,
-    MatStepperModule,
-    MatTableModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatTooltipModule,
-    MatTreeModule
+    MatTableModule
   ],
   exports: [UserTabComponent,
     CapitalizePipe,
-    CdkStepperModule,
-    CdkTableModule,
-    CdkTreeModule,
-    DragDropModule,
-    MatAutocompleteModule,
-    MatBadgeModule,
-    MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
     MatCheckboxModule,
-    MatChipsModule,
-    MatStepperModule,
-    MatDatepickerModule,
-    MatDialogModule,
-    MatDividerModule,
-    MatExpansionModule,
     MatGridListModule,
     MatIconModule,
-    MatInputModule,
     MatListModule,
-    MatMenuModule,
-    MatNativeDateModule,
-    MatPaginatorModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatRadioModule,
-    MatRippleModule,
-    MatSelectModule,
-    MatSidenavModule,
-    MatSliderModule,
-    MatSlideToggleModule,
-    MatSnackBarModule,
-    MatSortModule,
-    MatTableModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatTooltipModule,
-    MatTreeModule,
-    PortalModule,
-    ScrollingModule]
+    MatBadgeModule
+  ]
 })
 export class SharedModule { }
