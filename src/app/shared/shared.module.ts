@@ -4,10 +4,9 @@ import { UserTabComponent } from './user-tab/user-tab.component';
 import { CapitalizePipe } from './capitalize.pipe';
 import {
   MatBadgeModule,
-  MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule,
+  MatButtonModule, MatCardModule, MatCheckboxModule,
   MatGridListModule, MatIconModule,
   MatListModule,
-  MatSelectModule,
   MatTableModule
 } from '@angular/material';
 
@@ -17,20 +16,17 @@ import {
   imports: [
     CommonModule,
     MatButtonModule,
-    MatButtonToggleModule,
     MatBadgeModule,
     MatCardModule,
     MatCheckboxModule,
     MatGridListModule,
     MatIconModule,
     MatListModule,
-    MatSelectModule,
     MatTableModule
   ],
   exports: [UserTabComponent,
     CapitalizePipe,
     MatButtonModule,
-    MatButtonToggleModule,
     MatCardModule,
     MatCheckboxModule,
     MatGridListModule,
