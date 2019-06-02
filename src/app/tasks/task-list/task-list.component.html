@@ -1,0 +1,12 @@
+      <div class="container task-list-container">
+        <div class="task-header">
+          <div class="action-add" (click)="addNewTask()">add task</div>
+          <div class="action-remove" (click)="removedSelectedTasks()">remove completely</div>
+        </div>
+      </div>
+
+      <mat-selection-list (selectionChange)="onSelection($event, tasks.selectedOptions)" #tasks>
+        <div *ngFor="let task of taskList$ | async">
+          <app-task-view [task]="task" (deleteTask)="onDeleteTask($event)"></app-task-view>
+        </div>
+      </mat-selection-list>

@@ -7,11 +7,11 @@ import { ActivatedRoute } from '@angular/router';
 import { MatTableDataSource, MatListOption } from '@angular/material';
 
 @Component({
-  selector: 'app-taks-list',
-  templateUrl: './taks-list.component.html',
-  styleUrls: ['./taks-list.component.less']
+  selector: 'app-task-list',
+  templateUrl: './task-list.component.html',
+  styleUrls: ['./task-list.component.less']
 })
-export class TaksListComponent implements OnInit, OnDestroy {
+export class TaskListComponent implements OnInit, OnDestroy {
 
   private paramSubscribe: any;
   private subjectId: string;
@@ -33,7 +33,7 @@ export class TaksListComponent implements OnInit, OnDestroy {
     this.store.dispatch(new fromTasksState.CreateTask(this.generateNewTask()));
   }
 
-  deleteTask(task: ITask) {
+  onDeleteTask(task: ITask) {
     this.store.dispatch(new fromTasksState.DeleteTask(task));
   }
 

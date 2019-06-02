@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TaksListComponent } from './taks-list/taks-list.component';
+import { TaskListComponent } from './task-list/task-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { TasksRoutingModule } from './tasks-routing.module';
+import { TaskViewComponent } from './task-view/task-view.component';
 
 @NgModule({
-    declarations: [TaksListComponent],
+    declarations: [TaskListComponent, TaskViewComponent],
     imports: [
         CommonModule,
         TasksRoutingModule,

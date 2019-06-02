@@ -1,0 +1,8 @@
+<div class="task-selection">
+  <mat-list-option [checkboxPosition]='before' [value]="task" [selected]="task.complited">
+    <h3 matLine class="task-title"> {{task.title}}</h3>
+  </mat-list-option>
+  <button class="button-delete-task" mat-icon-button (click)="deleteTaskAction(task)">
+    <i class="material-icons button-delete-task">delete</i>
+  </button>
+</div>
