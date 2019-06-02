@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of, throwError } from 'rxjs';
 import { catchError, tap, map } from 'rxjs/operators';
-import { ITask, ICreateTaskInput } from '../../core/model/task.model';
+import { ITask, ICreateTaskInput } from '../core/model/task.model';
 import { environment } from 'src/environments/environment';
 
 @Injectable({

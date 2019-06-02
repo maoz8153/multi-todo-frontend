@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
-import * as fromTasksState from '../../../store/tasks';
+import * as fromTasksState from '../../store/tasks';
 import { ITask, ICreateTaskInput } from 'src/app/core/model/task.model';
 import { ActivatedRoute } from '@angular/router';
 import { MatTableDataSource, MatListOption } from '@angular/material';
@@ -50,7 +50,7 @@ export class TaksListComponent implements OnInit, OnDestroy {
   private generateNewTask(): ICreateTaskInput {
     const randomNum = Math.floor(Math.random() * 10);
     const newTasks = {
-      title: `new subject ${randomNum}`,
+      title: `new task ${randomNum}`,
       complited: false,
       fkSubjectId: this.subjectId
     };

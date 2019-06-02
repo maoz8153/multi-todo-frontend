@@ -4,7 +4,7 @@ import * as fromSubjectAction from '../../subjects/actions';
 import { catchError, map } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { ITask } from 'src/app/core/model/task.model';
-import { TaskService } from 'src/app/subjects/tasks/task.service';
+import { TaskService } from 'src/app/tasks/task.service';
 
 export class TaskListStateModel {
   data: Array<ITask>;
